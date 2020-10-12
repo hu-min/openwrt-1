@@ -224,10 +224,10 @@ endef
 TARGET_DEVICES += tplink_tl-wa901nd-v5
 
 define Device/tplink_tl-wr703n
-  $(Device/tplink-4mlzma)
+  $(Device/tplink-8mlzma)
   SOC := ar9331
   DEVICE_MODEL := TL-WR703N
-  DEVICE_PACKAGES := kmod-usb-chipidea2
+  DEVICE_PACKAGES := kmod-usb2 kmod-usb-chipidea2
   TPLINK_HWID := 0x07030101
   SUPPORTED_DEVICES += tl-wr703n
 endef
